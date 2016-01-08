@@ -8,6 +8,12 @@ var $caption = $("<p></p>");
 //An image to overlay
 $overlay.append($image);
 
+var $leftArrow = $("<div id='leftArrow'></div>");
+var $rightArrow = $("<div id='rightArrow'></div>");
+
+$image.before($leftArrow);
+$image.after($rightArrow);
+
 //A caption to overlay
 $overlay.append($caption);
 
@@ -25,8 +31,16 @@ $("#imageGallery a").click(function(event){
   $overlay.show();
   
   //Get child's alt attribute and set caption
-  var captionText = $(this).children("img").attr("alt");
+  var captionText = $(this).children("img").attr("title");
   $caption.text(captionText);
+});
+
+$leftArrow.click(function(){
+  
+});
+
+$rightArrow.click(function(){
+  
 });
 
 //When overlay is clicked

@@ -47,8 +47,19 @@ a {
  color:white; 
 }
 
+#leftArrow, #rightArrow{
+	background: url('../images/bg-slider-arrows.png') no-repeat;
+	background-size: cover;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	margin: 40px;
+	vertical-align: 50%;
+}
 
-
+#rightArrow{
+	background-position: -75px 0px;
+}
 
 
 
