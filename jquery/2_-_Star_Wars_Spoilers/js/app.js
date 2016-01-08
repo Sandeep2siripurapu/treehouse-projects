@@ -12,3 +12,14 @@ $("button").click(function(){
   //3.2, Get rid of button
   $(this).remove();
 });
+
+
+$(document).ready(function(){
+	$("#spoiler-01").before("<h2>Spoiler to Episode I</h2>");
+	$("#spoiler-02").before("<h2>Spoiler to Episode II</h2>");
+	$("#spoiler-03").before("<h2>Spoiler to Episode III</h2>");
+	$("#spoiler-04").before("<h2>Spoiler to Episode IV</h2>");
+	$("#spoiler-05").before("<h2>Spoiler to Episode V</h2>");
+	$("#spoiler-06").before("<h2>Spoiler to Episode VI</h2>");
+	$("#spoiler-07").before("<h2>Spoiler to Episode VII</h2>");
+});

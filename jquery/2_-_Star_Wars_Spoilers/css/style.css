@@ -8,6 +8,10 @@ img {
   width: 150px;
   margin: 100px auto;
 }
+h2{
+  color: #dae1e4;
+  text-align: center;
+}
 button {
   background: #dae1e4;
   border: none;
@@ -23,7 +27,7 @@ button {
 .spoiler {
 	background: #1d3c6a;
   width: 440px;
-  margin: 0 auto 20px;
+  margin: 0 auto 80px;
   border-radius: 5px;
   padding: 40px 20px;
   text-align: center;
