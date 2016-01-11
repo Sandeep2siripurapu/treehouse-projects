@@ -1,13 +1,111 @@
 body {
   background: #2f558e url(../img/bg.png) repeat 0 0;
   background-size: 400px auto;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 img {
   display: block;
   width: 150px;
-  margin: 100px auto;
+  margin: 100px auto 50px;
 }
+
+/****************************************
+  SELECT ELEMENT
+****************************************/
+
+hr{
+  margin-bottom: 50px;
+  margin-top: 30px;
+  width: 80%
+}
+
+.form-element {
+  background: #e8ebed;
+  border: 2px solid #e8ebed;
+  font-weight: normal;
+  color: #576366;
+  line-height: 1;
+  display: block;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 405px;
+  margin: 0 auto;
+}
+
+div.form-element span {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 14px;
+  width: 342px; 
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.form-element span {
+  padding: 14px 50px 13px 13px;
+  overflow: visible;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-element:active {
+  background: #fff;
+  color: #384047;
+}
+
+div.form-element:after {
+  background: #b7c0c7 url("../img/icon-select-afa1df242c3103bafba0d77cea36e5d5.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+div.form-element:active:after{
+  background: #576366 url("../img/icon-select-afa1df242c3103bafba0d77cea36e5d5.svg") no-repeat center;
+}
+
+.form-element select:focus{
+  outline: 0;
+}
+
+select {
+  vertical-align: middle;
+}
+
+.form-element select {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+div.form-element select {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  border: none;
+  background: none;
+  z-index: 1;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+/****************************************
+  SPOILERS
+****************************************/
+
 h2{
   color: #dae1e4;
   text-align: center;
@@ -27,11 +125,12 @@ button {
 .spoiler {
 	background: #1d3c6a;
   width: 440px;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   border-radius: 5px;
   padding: 40px 20px;
   text-align: center;
-  font-size: 24px
+  font-size: 24px;
+  display: none;
 }
 .spoiler span {
   color: #dae1e4;

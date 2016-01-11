@@ -2,38 +2,60 @@
 <html>
 <head>
 	<title>Star Wars Spoilers</title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 	<img src="img/deathstar.png" />
-	<p class="spoiler" id="spoiler-01">
-		<!--Spoiler:-->
-		<span>Qui-Gon will die. Obi-Wan makes promise to train Anakin as a Jedi.</span>
-	</p>
-	<p class="spoiler" id="spoiler-02">
-		<!--Spoiler:-->
-		<span>Anakin Skywalker and senator Padme Amidala hold a secret wedding.</span>
-	</p>
-	<p class="spoiler" id="spoiler-03">
-		<!--Spoiler:-->
-		<span>A maturing Anakin Skywalker goes to the Dark Side of the Force and becomes Sith Lord Darth Vader.</span>
-	</p>
-	<p class="spoiler" id="spoiler-04">
-		<!--Spoiler:-->
-		<span>Han Solo will join to separatists in battle against Empire.</span>
-	</p>
-	<p class="spoiler" id="spoiler-05">
-		<!--Spoiler:-->
-		<span>Darth Vader is Luke Skywalker's Father! Noooooooooooo!</span>
-	</p>
-	<p class="spoiler" id="spoiler-06">
-		<!--Spoiler:-->
-		<span>Luke and Leia are siblings. Ew.</span>
-	</p>
-	<p class="spoiler" id="spoiler-07">
-		<!--Spoiler:-->
-		<span>Han Solo's son, Kylo Ren, stabbed his father with his lightsaber.</span>
-	</p>
+
+	<div id="select-spoiler">
+		<h2>Choose Episode to read spoiler</h2>
+		<div class="form-element">
+			<span>Spoiler to Episode I</span>
+			<select name="spolers" id="spoilers">
+				<option value="spoiler-01">Spoiler to Episode I</option>
+				<option value="spoiler-02">Spoiler to Episode II</option>
+				<option value="spoiler-03">Spoiler to Episode III</option>
+				<option value="spoiler-04">Spoiler to Episode IV</option>
+				<option value="spoiler-05">Spoiler to Episode V</option>
+				<option value="spoiler-06">Spoiler to Episode VI</option>
+				<option value="spoiler-07">Spoiler to Episode VII</option>
+			</select>
+		</div>
+	</div>
+	<hr>
+
+	<section>
+		<p class="spoiler" id="spoiler-01">
+			<!--Spoiler:-->
+			<span>Qui-Gon will die. Obi-Wan makes promise to train Anakin as a Jedi.</span>
+		</p>
+		<p class="spoiler" id="spoiler-02">
+			<!--Spoiler:-->
+			<span>Anakin Skywalker and senator Padme Amidala hold a secret wedding.</span>
+		</p>
+		<p class="spoiler" id="spoiler-03">
+			<!--Spoiler:-->
+			<span>A maturing Anakin Skywalker goes to the Dark Side of the Force and becomes Sith Lord Darth Vader.</span>
+		</p>
+		<p class="spoiler" id="spoiler-04">
+			<!--Spoiler:-->
+			<span>Han Solo will join to separatists in battle against Empire.</span>
+		</p>
+		<p class="spoiler" id="spoiler-05">
+			<!--Spoiler:-->
+			<span>Darth Vader is Luke Skywalker's Father! Noooooooooooo!</span>
+		</p>
+		<p class="spoiler" id="spoiler-06">
+			<!--Spoiler:-->
+			<span>Luke and Leia are siblings. Ew.</span>
+		</p>
+		<p class="spoiler" id="spoiler-07">
+			<!--Spoiler:-->
+			<span>Han Solo's son, Kylo Ren, stabbed his father with his lightsaber.</span>
+		</p>
+	</section>
+	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
