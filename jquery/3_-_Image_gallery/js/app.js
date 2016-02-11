@@ -53,17 +53,22 @@ function getCurrentImage (currentImage) {
 
 function getPrevImage() {
     imageParent = $(thisImage).parent().prev();
-    thisImage = $(imageParent).children("a");
+    if(imageParent.length!=0){
+      thisImage = $(imageParent).children("a");
     // imageLocation = $(thisImage).attr("href");
     // $image.attr("src", imageLocation);
+    }
     getCurrentImage(thisImage);
+    
 }
 
 function getNextImage() {
     imageParent = $(thisImage).parent().next();
+    if(imageParent.length!=0){
     thisImage = $(imageParent).children("a");
-    // imageLocation = $(thisImage).attr("href");
-    // $image.attr("src", imageLocation);
+      // imageLocation = $(thisImage).attr("href");
+      // $image.attr("src", imageLocation);
+    }
     getCurrentImage(thisImage);
 }
 
