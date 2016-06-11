@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Quiz</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" src="vendor/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Awesome JS Quiz</h1>
+                <hr>
+
+                <div id="welcome">
+                    <h2>Hi there, developer!</h2>
+                    <p>Wanna try your JS skills? Then press the button below</p>
+                    <button>Start the quiz</button>
+                </div>
+
+                <div id="questionnaire">
+                    <h3 id="question">Question</h3>
+                    <p id="question-info"></p>
+                    <ul id="choices"></ul>
+                    <span id="answer"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+div#welcome {
+    border-radius: 20px;
+    background: #eee;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+div#welcome button {
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: #6ea1bb;
+    color: #eee;
+    font-size: 16px;
+}
+
+div#welcome button:hover {
+    background: #96c2d8;
+}
+
+div#questionnaire {
+    display: none;
+}
+
+#questionnaire ul#choices {
+    background: #c5efc5;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+p#question-info {
+    text-align: right;
+    font-style: italic;
+}
+
+ul#choices li {
+    padding: 10px 40px;
+}
+
+ul#choices li:hover {
+    background: #a0d8a0;
+}
+
+ul.correct,
+ul.correct li:hover {
+    background: #c5efc5 !important;
+}
+
+ul.correct li.correct-item {
+    background: #a0d8a0 !important;
+}
+
+ul.wrong,
+ul.wrong li:hover {
+    background: #ffbaba !important;
+}
+
+ul.wrong li.wrong-item {
+    background: #da8a8a !important;
+}
+
+span#answer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+}
+
+span#answer.correct {
+    color: #247b24;
+}
+
+span#answer.wrong {
+    color: ##e80202;
+}
