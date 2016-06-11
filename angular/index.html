@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>To Do List</title>
-	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  	<link rel="stylesheet" href="styles/main.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
 </head>
 <body ng-app="todoListApp">
 
-	<h1>My TODOs!</h1>
-  
-	<div class="list" ng-controller="mainCtrl">
-	    <div class="item">
-	    	<input type="checkbox">
-	    	<span></span>
-	    	<label>A sample to do</label>
-	    	<input class="editing-label" type="text">
-	    	<div class="actions">
-	        	<a href="">Edit</a>
-	        	<a href="">Save</a>
-	        	<a href="" class="delete">Delete</a>
-	    	</div>
-		</div>
-	</div>
-	
-	<script src="vendor/angular.js"></script>
-	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/todo.js"></script>
-	<script src="scripts/services/data.js"></script>
-	<script src="scripts/directives/todo.js"></script>
+    <h1>My TODOs!</h1>
+
+    <div class="list" ng-controller="mainCtrl">
+        <div class="add">
+            <a href="#" ng-click="addTodo()">
+                + Add a New Task</a>
+            </div>
+        <todo></todo>
+    </div>
+
+    <script src="vendor/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/todo.js"></script>
+    <script src="scripts/services/data.js"></script>
+    <script src="scripts/directives/todo.js"></script>
 </body>
 </html>
