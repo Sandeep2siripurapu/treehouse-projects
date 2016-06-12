@@ -124,7 +124,9 @@ Quiz.prototype = {
         });
 
         $('#answer').addClass('wrong')
-                    .html('Wrong! Correct answer is: <pre>' + self.getQuestion().answer + '</pre>');
+                    .html('Wrong! Correct answer is: <pre>' +
+                        self.htmlEntities(self.getQuestion().answer) +
+                    '</pre>');
     },
 
     finishQuiz: function () {
