@@ -15,7 +15,9 @@ This application provide info about badges and points of treehouse users.
 
 Type in console the following command to start the app
 
-> node app <username> <username>
+```bash
+node app <username> <username>
+```
 
 Or to test this app you can just type in console
 
