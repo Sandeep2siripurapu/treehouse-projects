@@ -3,7 +3,7 @@ Node.js console app to get Weather Forecast
 
 This application provide forecast about current weather.
 
-### [USAGE]
+### [ USAGE ]
 
 Copy config file
 
@@ -14,14 +14,15 @@ Copy config file
 Type in console the following command to start the app
 
 ```bash
-node app <country> <zipcode> <zipcode> <zipcode>
+    node app <country> <zipcode> <zipcode> <zipcode>
 ```
 
-### [TEST]
+### [ TEST ]
 
 To test this app you can just type in console
 
 > node app USA 97214
+
 > node app Germany 34246
 
 OR with array of zipcodes
