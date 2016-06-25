@@ -1,6 +1,7 @@
 var http = require('http'),
     https = require('https'),
-    func = require('./functions');
+    logMessage = require('./functions').logMessage,
+    logError = require('./functions').logError;
 
 function getProfile(username) {
     var req = http.get('http://teamtreehouse.com/' + username + '.json', function (res) {
@@ -14,7 +15,7 @@ function getProfile(username) {
             res.on('end', function () {
                 // Parse response
                 var json = JSON.parse(body);
-                func.logMessage(username, json.badges, json.points);
+                logMessage(username, json.badges, json.points);
             });
         } else if (code === 301) {
             var pathTo = res.headers.location;
@@ -29,11 +30,11 @@ function getProfile(username) {
                     + ' - There was an error getting profile data for "'
                     + username + '".'
             };
-            func.logError(msgObj);
+            logError(msgObj);
         }
     });
 
-    req.on('error', func.logError);
+    req.on('error', logError);
 }
 
 function getHttpsProfile(username) {
@@ -48,7 +49,7 @@ function getHttpsProfile(username) {
             res.on('end', function () {
                 // Parse response
                 var json = JSON.parse(body);
-                func.logMessage(username, json.badges, json.points);
+                logMessage(username, json.badges, json.points);
             });
         } else {
             var msgObj = {
@@ -57,11 +58,11 @@ function getHttpsProfile(username) {
                     + ' - There was an error getting profile data for "'
                     + username + '".'
             };
-            func.logError(msgObj);
+            logError(msgObj);
         }
     });
 
-    req.on('error', func.logError);
+    req.on('error', logError);
 }
 
 module.exports.get = getProfile;
