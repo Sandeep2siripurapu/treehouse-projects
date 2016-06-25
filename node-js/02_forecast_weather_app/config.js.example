@@ -1,0 +1,3 @@
+module.exports.forecastApiKey = 'PASTE HERE SECRET API KEY';
+
+module.exports.geoNamesUsername = 'YOUR USERNAME';
